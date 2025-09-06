@@ -4,13 +4,19 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function HomeLayout() {
   return (
-    <Tabs screenOptions={{ headerShown: false }}>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: "#2563EB", // Tailwind blue-600
+        tabBarInactiveTintColor: "gray",
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" color={color} size={size} />
+            <Ionicons name="home-outline" size={size} color={color} />
           ),
         }}
       />
@@ -19,7 +25,7 @@ export default function HomeLayout() {
         options={{
           title: "Search",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search-outline" color={color} size={size} />
+            <Ionicons name="search-outline" size={size} color={color} />
           ),
         }}
       />
@@ -28,7 +34,7 @@ export default function HomeLayout() {
         options={{
           title: "Saved",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" color={color} size={size} />
+            <Ionicons name="heart-outline" size={size} color={color} />
           ),
         }}
       />
@@ -37,7 +43,7 @@ export default function HomeLayout() {
         options={{
           title: "Inbox",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="chatbubble-outline" color={color} size={size} />
+            <Ionicons name="chatbubble-outline" size={size} color={color} />
           ),
         }}
       />
@@ -46,7 +52,7 @@ export default function HomeLayout() {
         options={{
           title: "Profile",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" color={color} size={size} />
+            <Ionicons name="person-outline" size={size} color={color} />
           ),
         }}
       />
