@@ -1,0 +1,4 @@
+// constants/images.ts
+export const Images = {
+  splash: require("../assets/images/splash.png"),
+};
