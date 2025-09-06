@@ -9,6 +9,7 @@ export default function HomeLayout() {
         headerShown: false,
         tabBarActiveTintColor: "#2563EB", // Tailwind blue-600
         tabBarInactiveTintColor: "gray",
+        tabBarStyle: { backgroundColor: "#fff", paddingBottom: 4, height: 60 },
       }}
     >
       <Tabs.Screen
