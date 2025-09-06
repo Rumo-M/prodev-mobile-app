@@ -1,0 +1,4 @@
+// constants/images.ts
+export const Images = {
+  logo: require("../assets/images/logo.png"),
+};

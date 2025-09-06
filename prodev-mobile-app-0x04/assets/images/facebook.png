@@ -1,0 +1,4 @@
+// constants/images.ts
+export const Images = {
+  facebook: require("../assets/images/facebook.png"),
+};
